@@ -64,6 +64,10 @@ PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
 
+# Boot Animation
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
+
 # Camera Effects for devices without a vendor partition
 ifneq ($(filter aosp_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES +=  \
